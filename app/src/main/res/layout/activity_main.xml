@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/esi_icon" />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Correo"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/texto"
+            android:textColor="#fff"
+            android:ems="10"
+            android:hint="Ingrese su Correo"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15dp"
+            android:drawableLeft="@drawable/ic_action_pass"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/texto"
+            android:textColor="#fff"
+            android:ems="10"
+            android:hint="Ingrese su Contraseña"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/entrar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/costum_button"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="Iniciar Sesion"/>
+    </LinearLayout>
+</RelativeLayout>
